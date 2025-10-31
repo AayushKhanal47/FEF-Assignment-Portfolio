@@ -1,41 +1,40 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
-const Projects = () => {
-  return (
-    <div id="Projects" className="p-10 md:p-24 text-white">
-      <h1 className="text-2xl md:text-4xl font-bold">Projects</h1>
-      <div className="py-12 px-8 flex flex-wrap gap-6 justify-center">
-        <ProjectCard
-          title="Imagify – AI Image Generator"
-          main="A full-stack AI-powered image generation app built with React, Express, MongoDB, and Razorpay. Users can create and download AI-generated images from text prompts."
-          demoLink="#"
-          codeLink="https://github.com/AayushKhanal47/Imagify"
-        />
-
-        <ProjectCard
-          title="Job Tracker – Cloudflare Full Stack App"
-          main="A TypeScript-based job management platform using React and Hono backend (Cloudflare Workers). Includes job posting, applications, Prisma + PostgreSQL, and JWT auth."
-          demoLink="#"
-          codeLink="https://github.com/AayushKhanal47/Job-Tracker"
-        />
-
-        <ProjectCard
-          title="Employee Management System"
-          main="A React + Express + MongoDB system for managing employees, tasks, and roles. Features task assignment, tracking, and admin dashboard."
-          demoLink="#"
-          codeLink="https://github.com/AayushKhanal47/Employee-Management-System"
-        />
-
-        <ProjectCard
-          title="AI-Powered Code Editor"
-          main="An intelligent web-based code editor that provides real-time AI feedback, error detection, and suggestions using React and OpenAI APIs."
-          demoLink="#"
-          codeLink="https://github.com/AayushKhanal47/AI-Powered-Code-Editor"
-        />
-      </div>
+const Projects = () => (
+  <section
+    id="Projects"
+    className="bg-[#18181B] py-24 px-4 md:px-20 text-white min-h-screen">
+    <h1 className="text-3xl md:text-5xl font-extrabold mb-12 text-center text-[#FF4466]">
+      Featured Projects
+    </h1>
+    <div className="flex flex-wrap gap-8 justify-center">
+      {/* Cards; update links/titles as needed */}
+      <ProjectCard
+        title="Imagify – AI Image Generator"
+        main="Create AI images with stunning UI. Powered by React, MongoDB, Express and Razorpay."
+        demoLink="#"
+        codeLink="https://github.com/AayushKhanal47/Imagify"
+      />
+      <ProjectCard
+        title="Job Tracker – Full Stack"
+        main="Modern tracking with React, Hono, Prisma + PostgreSQL. Secure JWT auth for jobs."
+        demoLink="#"
+        codeLink="https://github.com/AayushKhanal47/Job-Tracker"
+      />
+      <ProjectCard
+        title="Employee Management System"
+        main="All-in-one React+Express+MongoDB system for workforce management."
+        demoLink="#"
+        codeLink="https://github.com/AayushKhanal47/Employee-Management-System"
+      />
+      <ProjectCard
+        title="AI-Powered Code Editor"
+        main="Innovative code editor with AI feedback, error detection and tips."
+        demoLink="#"
+        codeLink="https://github.com/AayushKhanal47/AI-Powered-Code-Editor"
+      />
     </div>
-  );
-};
-
+  </section>
+);
 export default Projects;

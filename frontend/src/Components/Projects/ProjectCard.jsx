@@ -2,29 +2,26 @@ import React from "react";
 
 const ProjectCard = ({ title, main, demoLink, codeLink }) => {
   return (
-    <div className="p-5 md:p-6 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl">
-      <h3 className="text-xl md:text-2xl font-bold leading-normal mb-2">
-        {title}
-      </h3>
-      <p className="text-sm md:text-md leading-tight mb-4">{main}</p>
-      <div className="mt-auto flex gap-4">
+    <div className="bg-[#24243A] bg-opacity-70 rounded-2xl shadow-2xl p-7 w-80 glass-card backdrop-blur-md transition-transform hover:-translate-y-2 hover:shadow-yellow-200 duration-300 border border-[#FF4466] hover:border-[#FFD600]">
+      <h3 className="text-xl font-bold text-[#FFD600] mb-2">{title}</h3>
+      <p className="text-[#F3F3F3] mb-4">{main}</p>
+      <div className="flex gap-4 mt-auto">
         <a
           href={demoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white py-2 px-4 text-sm md:text-md hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+          className="flex-1 py-2 px-5 rounded-full font-semibold text-[#18181B] bg-[#FFD600] hover:bg-[#FF4466] hover:text-white duration-300 text-center shadow-inner">
           Demo
         </a>
         <a
           href={codeLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white py-2 px-4 text-sm md:text-md hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
-          Source Code
+          className="flex-1 py-2 px-5 rounded-full font-semibold text-[#18181B] bg-[#FF4466] hover:bg-[#FFD600] hover:text-black duration-300 text-center shadow-inner">
+          Source
         </a>
       </div>
     </div>
   );
 };
-
 export default ProjectCard;

@@ -1,44 +1,35 @@
 import React from "react";
 import avatarImg from "../../assets/avatar.jpg";
 
-const Home = () => {
-  return (
-    <section className="text-white flex flex-col-reverse md:flex-row w-full justify-between items-center p-10 md:p-20 gap-10">
-      <div className="md:w-2/4 md:pt-10 text-center md:text-left">
-        <h1 className="text-3xl md:text-6xl font-bold leading-tight tracking-tight">
-          Hello, I’m <span className="text-[#6e8efb]">Aayush</span>
-        </h1>
-        <p className="mt-4 text-base md:text-2xl leading-relaxed tracking-tight text-gray-300">
-          A passionate{" "}
-          <span className="text-[#aab4ff] font-semibold">
-            Full-Stack Developer
-          </span>
-          . I love building modern, responsive web applications using
-          <span className="font-semibold text-white">
-            {" "}
-            React, TypeScript, and Express
-          </span>
-          , and I’m always exploring ways to integrate
-          <span className="font-semibold text-white">
-            {" "}
-            AI and cloud technologies
-          </span>{" "}
-          into real-world projects. My goal is to craft clean, efficient, and
-          impactful digital experiences.
-        </p>
-        <button className="mt-6 text-white text-sm md:text-lg py-2 px-6 bg-[#465697] hover:bg-[#5a6bbf] hover:scale-105 transition-all duration-300 font-semibold rounded-3xl shadow-lg">
-          Contact Me
-        </button>
-      </div>
-      <div className="flex justify-center">
-        <img
-          src={avatarImg}
-          alt="Aayush"
-          className="w-56 md:w-80 rounded-full object-cover shadow-lg hover:scale-105 transition-transform duration-300"
-        />
-      </div>
-    </section>
-  );
-};
-
+const Home = () => (
+  <section className="bg-gradient-to-br from-[#24243A] via-[#18181B] to-[#FF4466] w-full flex flex-col-reverse md:flex-row py-24 px-8 md:px-24 min-h-screen justify-center items-center gap-12">
+    <div className="md:w-1/2 text-center md:text-left">
+      <h1 className="text-4xl md:text-6xl font-bold tracking-wider mb-3 text-[#FFD600] drop-shadow">
+        Hello, I’m <span className="text-[#FF4466]">Aayush</span>
+      </h1>
+      <p className="mt-6 text-lg md:text-2xl text-[#F3F3F3]">
+        Creative{" "}
+        <span className="text-[#FFD600] font-semibold">
+          Full-Stack Developer
+        </span>{" "}
+        passionate about building impactful apps with{" "}
+        <span className="text-[#FF4466] font-bold">
+          React, TypeScript, Express
+        </span>
+        . Always experimenting with <span className="text-[#FFD600]">AI</span>{" "}
+        and <span className="text-[#FFD600]">cloud</span> for smarter solutions!
+      </p>
+      <button className="mt-10 bg-[#FF4466] hover:bg-[#FFD600] transition-all text-white font-bold py-3 px-8 rounded-full shadow-lg hover:text-[#18181B] text-xl">
+        Contact Me
+      </button>
+    </div>
+    <div className="md:w-1/2 flex justify-center">
+      <img
+        src={avatarImg}
+        alt="Aayush"
+        className="w-56 md:w-96 rounded-2xl object-cover shadow-2xl border-4 border-[#FFD600] hover:border-[#FF4466] transition-all duration-300"
+      />
+    </div>
+  </section>
+);
 export default Home;

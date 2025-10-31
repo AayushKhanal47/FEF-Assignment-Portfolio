@@ -3,48 +3,34 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
-const Footer = () => {
-  return (
-    <div
-      id="Footer"
-      className="flex flex-col md:flex-row justify-around bg-[#465697] text-white p-8 md:p-12 items-center gap-6">
-      <div className="text-center md:text-left">
-        <h1 className="text-2xl md:text-5xl font-bold">Contact</h1>
-        <h3 className="text-sm md:text-2xl font-normal">
-          Feel free to reach out!
-        </h3>
-      </div>
-
-      <ul className="text-sm md:text-lg space-y-2">
-        <li className="flex items-center gap-2">
-          <MdOutlineEmail size={22} />
-          <a href="mailto:aayushkhanal810@gmail.com" className="hover:underline">
-            aayushkhanal810@gmail.com
-          </a>
-        </li>
-        <li className="flex items-center gap-2">
-          <CiLinkedin size={22} />
-          <a
-            href="https://www.linkedin.com/in/aayush-khanal-b1ab64290"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline">
-            linkedin.com/in/aayushkhanal
-          </a>
-        </li>
-        <li className="flex items-center gap-2">
-          <FaGithub size={22} />
-          <a
-            href="https://github.com/AayushKhanal47"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline">
-            github.com/aayushkhanal
-          </a>
-        </li>
-      </ul>
+const Footer = () => (
+  <footer className="bg-[#24243A] py-10 px-4 md:px-28 text-white flex flex-col md:flex-row items-center justify-around gap-6">
+    <div className="text-center md:text-left">
+      <h1 className="text-2xl font-bold text-[#FFD600] mb-2">Contact</h1>
+      <p className="text-[#F3F3F3] text-lg">Let's connect!</p>
     </div>
-  );
-};
-
+    <ul className="space-y-3 text-lg">
+      <li className="flex items-center gap-2 hover:text-[#FFD600] transition-colors">
+        <MdOutlineEmail size={22} />{" "}
+        <a href="mailto:aayushkhanal810@gmail.com" className="underline"></a>
+      </li>
+      <li className="flex items-center gap-2 hover:text-[#FF4466] transition-colors">
+        <CiLinkedin size={22} />{" "}
+        <a
+          href="https://www.linkedin.com/in/aayush-khanal-b1ab64290"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"></a>
+      </li>
+      <li className="flex items-center gap-2 hover:text-[#FFD600] transition-colors">
+        <FaGithub size={22} />{" "}
+        <a
+          href="https://github.com/AayushKhanal47"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"></a>
+      </li>
+    </ul>
+  </footer>
+);
 export default Footer;
